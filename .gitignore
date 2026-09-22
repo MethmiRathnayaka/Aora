@@ -1,0 +1,56 @@
+# Frontend dependencies and generated output
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+coverage/
+
+# Java / Maven generated output (keep Maven wrapper files)
+target/
+*.class
+
+# Local environment and secrets; keep shareable templates
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# This project's local Spring configuration contains credentials.
+# Copy application.example.yml to application.yml when setting up locally.
+/backend/src/main/resources/application.yml
+application-local.yml
+application-local.yaml
+application-local.properties
+
+# Runtime files, local uploads, and database backups
+logs/
+*.log
+*.pid
+uploads/
+backups/
+*.dump
+*.sql.gz
+
+# Editor and operating system files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local Java upgrade tool reports and hooks
+/backend/java-upgrade/
+/.github/modernize/java-upgrade/

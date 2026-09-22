@@ -1,0 +1,17 @@
+.creation-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 2px solid #15803d;
+  border-radius: 12px;
+  background: #f0fdf4;
+  color: #14532d;
+  text-align: left;
+}
+.creation-success > svg { flex-shrink: 0; }
+.creation-success h2 { margin: 0; color: #14532d; font-size: 1.35rem; }
+.creation-success p { margin: 8px 0 0; line-height: 1.6; overflow-wrap: anywhere; }
+.creation-success:focus-visible { outline: 3px solid #15803d; outline-offset: 3px; }
+@media (max-width: 480px) { .creation-success { padding: 16px; gap: 12px; } }

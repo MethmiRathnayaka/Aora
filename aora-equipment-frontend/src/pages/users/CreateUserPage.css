@@ -1,0 +1,24 @@
+.temporary-password-warning {
+  padding: 20px;
+  border: 2px solid #b45309;
+  border-left-width: 7px;
+  border-radius: 10px;
+  background: #fffbeb;
+  color: #78350f;
+}
+.temporary-password-warning strong { display: block; font-size: 1.2rem; }
+.temporary-password-warning p { margin: 10px 0 0; line-height: 1.6; }
+.password-leave-dialog {
+  width: min(540px, calc(100% - 32px));
+  margin: auto;
+  padding: 28px;
+  border: 2px solid #b45309;
+  border-radius: 14px;
+  background: white;
+  color: #171d1b;
+  box-shadow: 0 20px 60px #0003;
+}
+.password-leave-dialog::backdrop { background: #0008; }
+.password-leave-dialog h2 { margin-top: 0; color: #78350f; }
+.password-leave-dialog p { line-height: 1.6; }
+.password-leave-dialog .form-actions { display: flex; flex-wrap: wrap; gap: 12px; }

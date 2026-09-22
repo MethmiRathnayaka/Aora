@@ -1,0 +1,28 @@
+.rental-billing .equipment-panel { padding: 1.5rem; }
+.billing-filters { display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 1rem; align-items: end; }
+.billing-filters label { display: grid; gap: .5rem; min-width: 0; }
+.billing-filters input, .billing-filters select { width: 100%; padding: .7rem; border: 1px solid #cbd5e1; border-radius: .5rem; background: white; color: #0f172a; }
+.billing-toolbar, .bill-heading, .bill-parties { display: flex; justify-content: space-between; gap: 1.5rem; align-items: start; }
+.billing-toolbar { align-items: center; margin: 1rem 0; }
+.bill-heading { border-bottom: 2px solid #0f172a; padding-bottom: 1rem; }
+.bill-heading h2 { margin: .3rem 0; }
+.bill-parties { padding: 1.5rem 0; }
+.bill-parties p { margin: .35rem 0; }
+.bill-table { width: 100%; border-collapse: collapse; }
+.bill-table th, .bill-table td { padding: .8rem .6rem; border-bottom: 1px solid #e2e8f0; text-align: left; }
+.bill-table .bill-number { text-align: right; font-variant-numeric: tabular-nums; }
+.bill-table tfoot { font-size: 1.15rem; font-weight: 700; background: #f1f5f9; }
+.bill-note { color: #475569; margin-top: 1.5rem; font-size: .85rem; }
+@media (max-width: 760px) { .billing-filters { grid-template-columns: 1fr; } .bill-heading, .bill-parties { flex-direction: column; gap: .5rem; } }
+@media print {
+  @page { size: A4 landscape; margin: 14mm; }
+  .billing-no-print { display: none !important; }
+  body, .rental-billing, .rental-billing .dashboard-content { background: white !important; color: black; margin: 0; padding: 0; width: 100%; max-width: none; min-height: 0; }
+  .rental-billing .rental-bill { border: 0; box-shadow: none; padding: 0; }
+  .rental-bill .table-wrap { overflow: visible; }
+  .bill-table { font-size: 10pt; }
+  .bill-table thead { display: table-header-group; }
+  .bill-table tfoot { display: table-row-group; }
+  .bill-table tr, .bill-heading, .bill-parties { break-inside: avoid; }
+  .bill-heading, .bill-parties { flex-direction: row; }
+}

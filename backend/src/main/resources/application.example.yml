@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: aora-equipment-management
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aora
+    username: aora
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-wnydvo47plpuabao.us.auth0.com/
+
+server:
+  servlet:
+    context-path: /
+
+auth0:
+  domain: dev-wnydvo47plpuabao.us.auth0.com
+  apiAudience: https://aora-equipment-api
+  connection: Username-Password-Authentication
+  mgmtAudience: https://dev-wnydvo47plpuabao.us.auth0.com/api/v2/
+  mgmtClientId: jQ0AiL8nlf6ZptoC9PYHupGXf0fziYVM
+  mgmtClientSecret: ${AUTH0_MGMT_CLIENT_SECRET}
+
+logging:
+  level:
+    org.springframework.security: INFO
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+  swagger-ui:
+    oauth:
+      client-id: 6pUGw7aBEiMgZsCOENLABOHTkxbRdsKm
+      use-pkce-with-authorization-code-grant: true

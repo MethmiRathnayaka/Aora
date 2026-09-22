@@ -1,0 +1,21 @@
+.transfer-success-dialog {
+  box-sizing: border-box;
+  width: min(440px, calc(100vw - 32px));
+  max-height: calc(100svh - 32px);
+  margin: auto;
+  padding: 32px 28px;
+  border: 0;
+  border-radius: 16px;
+  background: #fff;
+  color: #183639;
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(24, 54, 57, 0.3);
+}
+
+.transfer-success-dialog::backdrop { background: rgba(24, 54, 57, 0.55); }
+.transfer-success-icon { display: block; margin: 0 auto 18px; color: #17766d; }
+.transfer-success-dialog h2 { margin: 0 0 12px; font-size: 24px; }
+.transfer-success-dialog p { margin: 0 0 24px; color: #577074; line-height: 1.6; overflow-wrap: anywhere; }
+.transfer-success-dialog .button { min-width: 140px; }
+.store-receive-panel { margin-bottom: 24px; }
+.store-receive-panel input[type="checkbox"] { width: auto; margin-right: 8px; accent-color: #17766d; }
